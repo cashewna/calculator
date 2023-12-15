@@ -1,4 +1,4 @@
-const {add, multiply, divide, subtract} = require('./calculator');
+const {add, multiply, divide, subtract, operate} = require('./calculator');
 
 describe('add', () => {
     test('add two numbers', () => {
@@ -33,5 +33,20 @@ describe('divide', () => {
     });
     test('divide two negative numbers', () => {
         expect(divide(-1, -2)).toBe(0.5);
+    });
+});
+
+describe('operate', () => {
+    test('operate with add', () => {
+        expect(operate('+', 1, 2)).toBe(3);
+    });
+    test('operate with subtract', () => {
+        expect(operate('-', 1, 2)).toBe(-1);
+    });
+    test('operate with multiply', () => {
+        expect(operate('*', 1, 2)).toBe(2);
+    });
+    test('operate with divide', () => {
+        expect(operate('/', 1, 2)).toBe(0.5);
     });
 });
