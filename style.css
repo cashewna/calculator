@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #523A28;
+    --primary-color-variant: #A47551;
+    --secondary-color: #D0B49F;
+    --secondary-color-variant: #E4D4C8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color-variant);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem 1.5rem;
+    padding: 0.7rem 2rem;
+    width: 95%;
+    height: 6rem;
+    border-radius: 0.8rem;
+    background-color: var(--secondary-color);
+}
+
+.display span {
+    font-size: 1.7rem;
+    color: var(--primary-color);
+}
+
+button {
+    margin: 4px;
+    padding: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
